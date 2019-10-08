@@ -299,7 +299,7 @@ def super_hero_powers(powers):
     """
     `super_hero_powers` takes in a dataframe like 
     powers and returns a list with the following three entries:
-        - The name of the super-hero with the least number of powers.
+        - The name of the super-hero with the greatest number of powers.
         - The name of the most common super-power among super-heroes whose names begin with 'M'.
         - The most popular super-power among those with only one super-power.
 
