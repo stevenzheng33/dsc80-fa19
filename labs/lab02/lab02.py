@@ -304,7 +304,7 @@ def super_hero_powers(powers):
         - The most popular super-power among those with only one super-power.
 
     :Example:
-    >>> fp = os.path.join('data', 'superhero_powers.csv')
+    >>> fp = os.path.join('data', 'superheroes_powers.csv')
     >>> powers = pd.read_csv(fp)
     >>> out = super_hero_powers(powers)
     >>> isinstance(out, list)
@@ -415,7 +415,7 @@ def simulate_bhbe_null(n):
     :Example:
     >>> superheroes_fp = os.path.join('data', 'superheroes.csv')
     >>> heroes = pd.read_csv(superheroes_fp, index_col=0)
-    >>> out = simulate_null(10)
+    >>> out = simulate_bhbe_null(10)
     >>> isinstance(out, pd.Series)
     True
     >>> out.shape[0]
