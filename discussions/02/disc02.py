@@ -19,13 +19,13 @@ def question01(data, labels):
     True
     """
 
-    return ...
+    return pd.DataFrame(data, index = labels)
 
 
 def question02(ser):
     """
     Given a Pandas Series, outputs the
-    positions (an index or array) of 
+    positions (an index or array) of
     entries of ser that are multiples of 3.
 
     >>> ser = pd.Series([1, 3, 6, 9])
@@ -34,6 +34,5 @@ def question02(ser):
     True
     """
 
-    return ...
 
-
+    return ser.loc[ser%3==0].index
