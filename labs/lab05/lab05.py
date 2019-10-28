@@ -109,9 +109,9 @@ def quantitative_distribution(child, N):
     >>> df = pd.read_csv(fp)
     >>> child = df['child_50']
     >>> out = quantitative_distribution(child, 100)
-    >>> out.min() > 56
+    >>> out.min() >= 56
     True
-    >>> out.max() < 79
+    >>> out.max() <= 79
     True
     >>> np.isclose(out.mean(), child.mean(), atol=1)
     True
