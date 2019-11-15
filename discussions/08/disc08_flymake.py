@@ -26,7 +26,7 @@ def heteroskedasticity(datasets):
     likely heteroskedastic.
 
     >>> datasets = {k:pd.read_csv('data/dataset_%d.csv' % k) for k in range(7)}    
-    >>> out = rmse(datasets)
+    >>> out = heteroskedasticity(datasets)
     >>> len(out) == 7
     True
     >>> isinstance(out, pd.Series)
