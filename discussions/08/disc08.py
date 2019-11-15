@@ -9,7 +9,7 @@ def rmse(datasets):
     """
     Return the RMSE of each of the datasets.
 
-    >>> datasets = {k:pd.read_csv('data/dataset_%d.csv' % k) for k in range(1,8)}    
+    >>> datasets = {k:pd.read_csv('data/dataset_%d.csv' % k) for k in range(7))}    
     >>> out = rmse(datasets)
     >>> len(out) == 7
     True
@@ -25,7 +25,7 @@ def heteroskedasticity(datasets):
     Return a boolean series giving whether a dataset is
     likely heteroskedastic.
 
-    >>> datasets = {k:pd.read_csv('data/dataset_%d.csv' % k) for k in range(1,8)}    
+    >>> datasets = {k:pd.read_csv('data/dataset_%d.csv' % k) for k in range(7)}    
     >>> out = rmse(datasets)
     >>> len(out) == 7
     True
